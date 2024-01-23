@@ -1,3 +1,4 @@
+import React from 'react';
 import LeftLanding from "./Pages/LeftLanding";
 import RightLanding from "./Pages/RightLanding";
 
