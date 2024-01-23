@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="mt-52 ">
-    <ul className="flex flex-wrap space-x-3 max-w-[20rem] justify-center pr-3 ">
+    <ul className="flex flex-wrap space-x-3  justify-center pr-3 ">
       <li>About</li>
       <li>Accessibility</li>
       <li>Help</li>
