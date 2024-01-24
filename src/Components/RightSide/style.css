@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Custom styling for the input range slider thumb */
+.custom-slider {
+    --thumb-size: 1.5rem; /* Set the desired size for the thumb */
+    --thumb-color: #ca4298; /* Set the desired color for the thumb */
+  
+    appearance: none;
+    height: 10px;
+    border-radius: 15px;
+    outline: none;
+    background: linear-gradient(to right, #3498db, #e74c3c); /* Set the desired gradient colors */
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    cursor: pointer;
+  }
+  
+  .custom-slider::-moz-range-thumb {
+    appearance: none;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    cursor: pointer;
+  }
+  

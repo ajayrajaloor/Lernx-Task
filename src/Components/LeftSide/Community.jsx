@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Community = () => {
   return (
-    <div className="pl-10">
+    <div className="pl-4 md:pl-10">
       <h3 className="text-xl font-semibold mb-2">Communities Feed</h3>
       {/* Community 1 */}
       <div className="flex items-center mb-2">

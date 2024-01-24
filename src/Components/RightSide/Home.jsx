@@ -5,9 +5,9 @@ import Posts from './Posts'
 
 const Home = () => {
   return (
-    <div className='border-t mt-3  border-gray-300 bg-slate-50 min-h-screen'>
+    <div className='border-t mt-3  border-gray-300 bg-slate-100 h-screen'>
       <Banner/>
-      <div className='flex '>
+      <div className='flex flex-col lg:flex-row'>
         <Profile/>
         <Posts/>
         </div>

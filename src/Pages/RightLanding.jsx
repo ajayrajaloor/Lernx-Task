@@ -4,13 +4,13 @@ import Home from '../Components/RightSide/Home'
 
 
 const RightLanding = () => {
-  return (
-    <div className="w-4/5 lg:w-3/4 xl:w-4/5">
-        <NavRight/>
-        <Home/>
-        
-    </div>
-  )
-}
+    return (
+      <div className="w-full lg:w-3/4 xl:w-4/5 border-l border-gray-300 h-screen">
+        <NavRight />
+        <Home />
+      </div>
+    );
+  };
+  
 
 export default RightLanding
