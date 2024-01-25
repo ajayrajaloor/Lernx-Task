@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Name1",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTCcWX7cBf4ZF2hClg0bTONv8hjV_1Jq-WTQ&usqp=CAU",
+      "timeAgo": "14 min ago",
+      "community": "Figma Community",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIFVQO1GhXo4_GBQc7ygGA8Ea16-kMLrC3g&usqp=CAU",
+      "likes": 1900,
+      "comments": 45,
+      "sender": "Name2",
+      "senderAvatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdsC6_g4tHOfg6UsEMCzvW4cqwK6nXUCljg&usqp=CAU",
+      "replyContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "replyLikes": 1,
+      "replyReplies": 1,
+      "replySender": "Name3",
+      "replySenderAvatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_upzZ7ljAZIdBCo1AL1A3BPA5i_b2K1HI4w&usqp=CAU",
+      "replySenderContent" : "Lorem Ipsum is simply dummy text of the"
+    },
+    {
+      "id": 2,
+      "name": "Name4",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_upzZ7ljAZIdBCo1AL1A3BPA5i_b2K1HI4w&usqp=CAU",
+      "timeAgo": "30 min ago",
+      "community": "Figma Community",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text",
+      "likes": 500,
+      "comments": 20,
+      "replyContent": "Reply content for the second post.",
+      "replyLikes": 2,
+      "replyReplies": 0,
+      "replySender": "Name5",
+      "replySenderAvatar": "https://example.com/avatar2.jpg"
+    }
+  ]
+  

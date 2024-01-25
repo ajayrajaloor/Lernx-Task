@@ -5,7 +5,8 @@ const Community = () => {
   return (
     <div className="pl-4 md:pl-10">
       <h3 className="text-xl font-semibold mb-2">Communities Feed</h3>
-      {/* Community 1 */}
+
+      
       <div className="flex items-center mb-2">
         <img
           src="https://placekitten.com/50/50?image=1"

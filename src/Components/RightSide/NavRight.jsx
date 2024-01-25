@@ -9,7 +9,7 @@ import {
 const NavRight = () => {
   return (
     <div className="navbar flex items-center justify-end space-x-4 mt-4">
-      <div className=" flex items-center space-x-2 border border-gray-300 rounded p-2 w-full sm:w-10">
+      <div className=" flex items-center space-x-2 border border-gray-300 rounded p-2 ">
         <RiSearchLine className="text-gray-500 text-xl" />
         <div className="flex-grow h-6 bg-gray-500 border-r border-gray-300"></div>
         <input

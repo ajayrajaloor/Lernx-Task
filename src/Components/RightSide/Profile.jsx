@@ -7,7 +7,7 @@ import "./style.css";
 
 const Profile = () => {
   const [enabled, setEnabled] = useState(false);
-  const [inputValue, setInputValue] = useState(0);
+  const [inputValue, setInputValue] = useState(73);
   const chartRef = useRef(null);
   const chartInstance = useRef(null);
 
@@ -47,7 +47,6 @@ const Profile = () => {
         },
       });
 
-      // Add text inside the doughnut chart
       const { width, height } = chartRef.current;
       const ctx = chartRef.current.getContext("2d");
       ctx.textAlign = "center";
@@ -55,10 +54,7 @@ const Profile = () => {
       ctx.fillStyle = "black";
       ctx.font = "bold 18px Arial";
 
-      // Add "350" text
       ctx.fillText("350", width / 2, height / 2 - 10);
-
-      // Add "Sphere Rating" text
       ctx.font = "14px Arial";
       ctx.fillText("Sphere Rating", width / 2, height / 2 + 10);
     };
@@ -71,7 +67,6 @@ const Profile = () => {
 
     window.addEventListener("resize", resizeChart);
 
-    // Call the resizeChart function initially
     resizeChart();
 
     return () => {
@@ -84,17 +79,17 @@ const Profile = () => {
   }, [inputValue]);
 
   return (
-    <div className="w-full lg:w-2/6 relative bg-white h-screen p-4 lg:p-8">
-      <div className=" bg-white flex justify-center">
+    <div className="w-full lg:w-1/3 bg-white ">
+      <div className="bg-white flex flex-col lg:flex-row justify-center items-center lg:items-start">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBhcplevwUKGRs1P-Ps8Mwf2wOwnW_R_JIA&usqp=CAU"
           alt=""
-          className="rounded-full border absolute top-[-6rem] w-44"
+          className="rounded-full border absolute top-[8rem] w-44"
         />
 
-        <div className="mt-20 flex flex-col absolute">
+        <div className="mt-20 flex flex-col w-full ">
           <div className="flex flex-col items-center">
-            <h1 className=" md:text-2xl font-medium ">Ayaat Khaana</h1>
+            <h1 className="md:text-2xl font-medium">Ayaat Khaana</h1>
             <h1>UI/UX Developer</h1>
             <div className="flex flex-row gap-3">
               <IoIosPeople className="mt-0.5" />
@@ -103,16 +98,16 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="  mt-3 px-2 pl-4">
-            <div className="flex">
-              <h1 className="text-base font-medium">
+          <div className="mt-3  px-1 lg:w-full">
+            <div className="flex flex-row lg:flex-row ">
+              <h1 className="text-base  font-medium ">
                 Make my profile visible to employers
               </h1>
 
-              <label class="inline-flex relative items-center pl-3 cursor-pointer mt-0.5">
-                <input
+              <label className="inline-flex  items-center pl-3 cursor-pointer mt-0.5">
+                <input  
                   type="checkbox"
-                  className="sr-only peer relative"
+                  className="sr-only peer absolute"
                   checked={enabled}
                   readOnly
                 />
@@ -120,7 +115,7 @@ const Profile = () => {
                   onClick={() => {
                     setEnabled(!enabled);
                   }}
-                  className={`absolute w-11 h-6 rounded-full peer ${
+                  className={`relative w-11 h-6 rounded-full peer ${
                     enabled ? "bg-blue-500" : "bg-gray-200"
                   } peer-focus:ring-green-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all blue-checked:bg-green-600`}
                 ></div>
@@ -134,11 +129,11 @@ const Profile = () => {
           </div>
 
           <div className="mt-8 ">
-            <div className="flex justify-between px-4">
+            <div className="flex justify-between px-1">
               <h1 className="font-medium">Online Links</h1>
               <MdAddCircle className="text-blue-600 text-2xl" />
             </div>
-            <h1 className="text-gray-400 px-4">
+            <h1 className="text-gray-400 px-1">
               Add your online portfolio links to increase your profile strength
             </h1>
           </div>
